@@ -1,4 +1,5 @@
 import { Template } from 'meteor/templating';
-import '../imports/loginpages/body.js';
+import '../imports/ui/loginpage.js';
+import '../imports/signuppage/signup.js';
 import './main.html';
  
