@@ -43,10 +43,15 @@ opacity:0.7;
 	font-weight: bold 
 }
 
-.container-class input[type="password"],input[type="text"]
+.container-class input[type="password"]
 {
 	margin:12px;
 	width:325px;
+}
+
+.container-class input[type="email"]{
+	width:325px;
+	margin:12px;
 }
 
 .container-forgotten{
@@ -59,7 +64,7 @@ opacity:0.7;
 
 }
 
-.sign-container input[type="text"],input[type="email"],input[type="password"],input[type="date"],button[id="signbutton"]{
+.sign-container input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[id="signbutton"]{
     padding:5px;
     margin:7px;
     width:500px;

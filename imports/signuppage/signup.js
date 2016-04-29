@@ -17,11 +17,15 @@ Template.signup.events({
 		};
 		Accounts.createUser(options,function(error){
 			if(error){
-				console.log("error:",error.reason)
+				alertify.alert(error.reason)	
 			}
 			else{
 				Router.go('/')
 			}
 		});
+	},
+
+	'click #loginbtn'(event){
+		Router.go('/')
 	}
 })
