@@ -4,4 +4,6 @@ Router.route('/',{
 Router.route('/signup',function(){
 	this.render('signup');
 });
-Router.route('/home');
+Router.route('/dashboard',function(){
+	this.render('dashboard');
+});

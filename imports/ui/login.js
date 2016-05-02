@@ -7,16 +7,16 @@ import './login.html' ;
 Template.login.events({
 	'submit #form1'(event){
 		event.preventDefault();
-		var credentials = {
-		 loginemail : $("#loginemail").val(),
-		 loginpassword : $("#loginpassword").val()
-		};
-		Meteor.loginWithPassword(credentials,function(error){
+		var loginemail = $("#loginemail").val();
+		var loginpassword = $("#loginpassword").val();
+		check(loginemail,String);
+		check(loginpassword,String);
+		Meteor.loginWithPassword(loginemail,loginpassword,function(error){
 			if(error){
 				console.log("error:",error.reason)
 			}
 			else{
-				
+				Router.go('/dashboard')
 			}
 		})
 	},

@@ -21,3 +21,4 @@ twbs:bootstrap
 iron:router
 accounts-password
 ovcharik:alertify
+check
