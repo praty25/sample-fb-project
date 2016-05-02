@@ -1,5 +1,12 @@
 <template name="dashboard">
 {{#if currentUser}}
-"Hi"
+	<div class="dashboard-header">
+	 	<div class="header-search">
+	 		<input type="text" placeholder="search your friend" id="searchicon">
+	    </div>
+	    <div class="logout-option">
+	    	<button class="btn btn-success pull-right" id="logout-btn">Logout</button>
+	    </div>
+	</div>
 {{/if}}
 </template>

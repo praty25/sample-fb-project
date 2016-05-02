@@ -13,7 +13,7 @@ Template.login.events({
 		check(loginpassword,String);
 		Meteor.loginWithPassword(loginemail,loginpassword,function(error){
 			if(error){
-				console.log("error:",error.reason)
+				alertify.alert(error.reason)
 			}
 			else{
 				Router.go('/dashboard')
