@@ -19,9 +19,8 @@ Template.dashboard.events({
 Template.dashboard.helpers({
 	'profilename':function(){
 		var collections = Meteor.users.findOne({_id : Meteor.userId()},{fields:{"profile.name":1}});
-		var info = collections.profile;
-		var fbname = info.name
-		return fbname;
+		var info = collections.profile.name;
+		return info;
 	}
 })
 
