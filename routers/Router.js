@@ -5,7 +5,7 @@ Router.route('/signup',function(){
 	name : 'signup',
 	this.render('signup');
 });
-Router.route('/dashboard/:_id',function(){
+Router.route('/dashboard',function(){
 	name : 'dashboard',
 	this.render('dashboard');
 });

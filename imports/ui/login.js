@@ -16,7 +16,7 @@ Template.login.events({
 				alertify.alert(error.reason)
 			}
 			else{
-				Router.go('/dashboard/_id')
+				Router.go('/dashboard')
 			}
 		})
 	},

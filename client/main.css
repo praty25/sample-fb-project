@@ -112,4 +112,37 @@ opacity:0.7;
 	background-size:100% 100%
 }
 
+.chatbox{
+	position:fixed;
+	bottom:0%;
+}	
+
+.chattitle{
+	width:250px;
+	height:20px;
+	border:1px solid blue;
+	background:blue;
+	color:white;
+}
+
+.chatcontent{
+	border:1px solid blue;
+	width:250px;
+	height:250px;
+	
+}
+
+.chatinput{
+	border:1px solid blue;
+	width:250px;
+	height:50px;
+	
+}
+
+#chatmsg{
+	width:250px;
+	height:50px;
+}
+
+
 /* CSS declarations go here */

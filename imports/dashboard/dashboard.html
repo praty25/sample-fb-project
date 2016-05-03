@@ -3,7 +3,7 @@
 	<div class="dashboard-header">
 	 	<div class="header-search">
 	 		<input type="text" placeholder="search your friend" id="searchicon">
-	    </div>
+	 	</div>
 	    <div class="nav">
 	    	<button class="btn btn-primary pull-right" id="btn-home">Home</button>
 	   	</div>
@@ -15,7 +15,18 @@
 	<h1>Welcome {{profilename}}</h1>
 	</div>
 	<div class="aside">
-	</div>    
+	</div>   
+	<div class="chatbox">
+		<div class="chattitle">
+		<span>Chat<i class="fa fa-times" style="float:right;" aria-hidden="true"></i></span>
+		</div>
+		<div class="chatcontent">
+		
+		</div>
+		<div class="chatinput">
+		<input type="text" id="chatmsg" placeholder="Type Your Message">
+		</div>
+	</div> 
 {{/if}}
 </template>
 
